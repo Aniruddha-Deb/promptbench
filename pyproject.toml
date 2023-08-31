@@ -1,0 +1,24 @@
+[project]
+name = "promptbench"
+description = "Evaluation library for prompts, supporting logging and retries"
+version = "0.1.0"
+
+dependencies = [
+    "jinja2",
+    "openai",
+    "python-dotenv",
+    "tqdm",
+    "google-generativeai",
+    "nested_dict",
+    "backoff"
+]
+
+[tool.setuptools]
+py-modules = []
+
+[project.optional-dependencies]
+dev = [
+    "tox",
+    "pre-commit",
+    "bump2version"
+]
